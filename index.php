@@ -20,6 +20,12 @@
         <div class="container py-5">
     
             <h1>List</h1>
+
+            <ul class="mb-4">
+                <li v-for="currentDisc in discsList">
+                    {{ currentDisc }}
+                </li>
+            </ul>
     
         </div>
     </div>
