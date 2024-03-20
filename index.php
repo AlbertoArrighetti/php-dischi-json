@@ -16,17 +16,23 @@
 <body>
 
     <div id="app">
-
-        <div class="container py-5">
-    
-            <h1>List</h1>
+        <div class="container py-5">    
 
             <ul class="mb-4">
+
                 <li v-for="currentDisc in discsList">
-                    {{ currentDisc }}
+                <div class="card">
+                    <img :src="currentDisc.poster" class="card-img-top" :alt="currentDisc.title">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">{{ currentDisc.title }}</h5>
+                        <p class="card-text">{{ currentDisc.author }}</p>
+                        <div class="album_year">{{ currentDisc.year }}</div>
+                    </div>
+                </div>
                 </li>
+
             </ul>
-    
         </div>
     </div>
 
