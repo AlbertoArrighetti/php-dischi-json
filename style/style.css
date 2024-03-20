@@ -1,0 +1,36 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1d2d3c;
+}
+
+
+.my_list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 0;
+}
+.my_list_item {
+    width: calc(100% / 3 - 90px / 3 * 2);
+    
+}
+.my_card {
+    height: 100%;
+    padding: 40px 44px;
+    background-color: #112030;
+    color: #ffffff;
+    text-align: center;
+}
+.my_card img {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.card-body {
+    padding: 0;
+}

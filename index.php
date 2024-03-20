@@ -11,29 +11,32 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- style -->
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 
     <div id="app">
-        <div class="container py-5">    
-
-            <ul class="mb-4">
-
-                <li v-for="currentDisc in discsList">
-                <div class="card">
-                    <img :src="currentDisc.poster" class="card-img-top" :alt="currentDisc.title">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">{{ currentDisc.title }}</h5>
-                        <p class="card-text">{{ currentDisc.author }}</p>
-                        <div class="album_year">{{ currentDisc.year }}</div>
+        <main>
+            <div class="container py-5">    
+    
+                <ul class="my_list">
+    
+                    <li v-for="currentDisc in discsList" class="my_list_item">
+                    <div class="card my_card">
+                        <img :src="currentDisc.poster" class="card-img-top" :alt="currentDisc.title">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">{{ currentDisc.title }}</h5>
+                            <p class="card-text">{{ currentDisc.author }}</p>
+                            <div class="fw-bold">{{ currentDisc.year }}</div>
+                        </div>
                     </div>
-                </div>
-                </li>
-
-            </ul>
-        </div>
+                    </li>
+    
+                </ul>
+            </div>
+        </main>
     </div>
 
 
