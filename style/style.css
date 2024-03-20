@@ -8,7 +8,29 @@ body {
     background-color: #1d2d3c;
 }
 
+/* nav */
+#logo_bar {
+    background-color: #112030;
+}
+.nav_container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.nav_container img {
+    width: 60px;
+    padding: 24px 0;
+}
+.filter-green{
+    filter: invert(48%) 
+            sepia(79%) 
+            saturate(2476%) 
+            hue-rotate(86deg) 
+            brightness(118%) 
+            contrast(119%);
+}
 
+
+/* main */
 .my_list {
     list-style-type: none;
     display: flex;

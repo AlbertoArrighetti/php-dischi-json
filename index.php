@@ -17,6 +17,17 @@
 <body>
 
     <div id="app">
+
+        <nav id="logo_bar">
+            <div class="nav_container">
+                <img src="./img/favicon.ico" alt="" class="filter-green">
+            </div>
+        </nav>
+
+
+
+
+
         <main>
             <div class="container py-5">    
     
